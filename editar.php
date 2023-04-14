@@ -89,7 +89,7 @@ if (isset($_POST['submit']) && !$resultado['error']) {
         <div class="row">
             <div class="col-md-12">
                 <div class="alert alert-success" role="alert">
-                    El alumno ha sido actualizado correctamente
+                    <?= 'El alumno ' . escapar($_POST['nombre']) . ' ha sido actualizado con éxito' ?>
                 </div>
             </div>
         </div>
